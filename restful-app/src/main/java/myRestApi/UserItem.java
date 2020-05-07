@@ -1,7 +1,12 @@
 package myRestApi;
 
-public class UserItem {
+import java.util.Arrays;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
+public class UserItem {
+	@Id
 	private int userId;
 	private String firstName;
 	private String lastName;
@@ -48,5 +53,16 @@ public class UserItem {
 		this.emailAddress = emailAddress;
 	}
 	
+	@Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("\n----- Employee Information-----\n");
+        sb.append("ID: " + getUserId() + "\n");
+        sb.append("Name: " + getFirstName() + getLastName() + "\n");
+        sb.append("Phone Number: " + getPhoneNumber() + "\n");
+        sb.append("Email Address: " + getEmailAddress() + "\n");
+        sb.append("*****************************");
+        return sb.toString();
+	}
 	
 }
