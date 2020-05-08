@@ -25,7 +25,7 @@ public class GetRequest {
 	@RequestMapping()
 	public List<List<String>> getUsers() throws JsonProcessingException, IOException{
 		ObjectMapper objectMapper = new ObjectMapper();
-		JsonNode jsonNode = objectMapper.readTree(new File(currentDirectory + "//src//main//java//myRestApi//contents.json"));
+		JsonNode jsonNode = objectMapper.readTree(new File(currentDirectory + "//contents.json"));
 		String fnameNode="", lnameNode="", phoneNumberNode="", emailAddressNode="";
 		List<Integer> id = new ArrayList<Integer>();
 		List<String> userList = new ArrayList<String>();
@@ -56,7 +56,7 @@ public class GetRequest {
 	public List<String> getId(@PathVariable("userId") int userId)  throws IOException{
 		
 		ObjectMapper objectMapper = new ObjectMapper();
-		JsonNode jsonNode = objectMapper.readTree(new File(currentDirectory + "//src//main//java//myRestApi//contents.json"));
+		JsonNode jsonNode = objectMapper.readTree(new File(currentDirectory + "//contents.json"));
 		String fnameNode="", lnameNode="", phoneNumberNode="", emailAddressNode="";
 		List<Integer> id = new ArrayList<Integer>();
 		List<String> userList = new ArrayList<String>();
@@ -86,7 +86,7 @@ public class GetRequest {
 	public List<String> getUserOrders(@PathVariable("userId") int userId)  throws IOException{
 		
 		ObjectMapper objectMapper = new ObjectMapper();
-		JsonNode jsonNode = objectMapper.readTree(new File(currentDirectory + "//src//main//java//myRestApi//contents.json"));
+		JsonNode jsonNode = objectMapper.readTree(new File(currentDirectory + "//contents.json"));
 		List<Integer> id = new ArrayList<Integer>();
 		List<String> userList = new ArrayList<String>();
 		for(JsonNode root : jsonNode) {	
@@ -108,7 +108,7 @@ public class GetRequest {
 			@PathVariable("orderId") String orderId)  throws IOException{
 		
 		ObjectMapper objectMapper = new ObjectMapper();
-		JsonNode jsonNode = objectMapper.readTree(new File(currentDirectory + "//src//main//java//myRestApi//contents.json"));
+		JsonNode jsonNode = objectMapper.readTree(new File(currentDirectory + "//contents.json"));
 		List<Integer> id = new ArrayList<Integer>();
 		List<String> userList = new ArrayList<String>();
 		for(JsonNode root : jsonNode) {	
