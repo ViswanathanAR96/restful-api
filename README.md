@@ -1,9 +1,9 @@
 # restful-api - MVP of a simple E-commerce website
 This project involves developing three main parts of modern Web Development –Model, View, and Control. We made a full stack application comprising of:
-  •	Rest APIs created using spring boot. 4 API’s that serve getting allUsersData, specificUserData, specificUserAllOrdersData, specificUserSpecificOrderData
-  •	JavaScript with CSS and JQuery to develop SPA and View-Control integration
-  •	Remote JSON database 
-  •	Docker to dock project as an image
+  1) Rest APIs created using spring boot. 4 API’s that serve getting allUsersData, specificUserData, specificUserAllOrdersData, specificUserSpecificOrderData
+  2) JavaScript with CSS and JQuery to develop SPA and View-Control integration
+  3) Remote JSON database 
+  4) Docker to dock project as an image
 The theme of the project is Users. Displaying user details such as username, phone number, email address and shopping orders.
 Starting off with the Back-end development, we developed 4 REST API’s with Spring Boot. Functions of API’s are:
   •	allUsersData – Get all the users from database 
