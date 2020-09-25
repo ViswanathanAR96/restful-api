@@ -1,15 +1,15 @@
 # restful-api - MVP of a simple E-commerce website
 This project involves developing three main parts of modern Web Development –Model, View, and Control. We made a full stack application comprising of:
-•	Rest APIs created using spring boot. 4 API’s that serve getting allUsersData, specificUserData, specificUserAllOrdersData, specificUserSpecificOrderData
-•	JavaScript with CSS and JQuery to develop SPA and View-Control integration
-•	Remote JSON database 
-•	Docker to dock project as an image
+  •	Rest APIs created using spring boot. 4 API’s that serve getting allUsersData, specificUserData, specificUserAllOrdersData, specificUserSpecificOrderData
+  •	JavaScript with CSS and JQuery to develop SPA and View-Control integration
+  •	Remote JSON database 
+  •	Docker to dock project as an image
 The theme of the project is Users. Displaying user details such as username, phone number, email address and shopping orders.
 Starting off with the Back-end development, we developed 4 REST API’s with Spring Boot. Functions of API’s are:
-•	allUsersData – Get all the users from database 
-•	specificUserData -  Get only the particular user of liking
-•	specificUserAllOrdersData – Get all the shopping orders of  a particular user
-•	specificUserSpecificOrderData- Get only an order of a particular user.
+  •	allUsersData – Get all the users from database 
+  •	specificUserData -  Get only the particular user of liking
+  •	specificUserAllOrdersData – Get all the shopping orders of  a particular user
+  •	specificUserSpecificOrderData- Get only an order of a particular user.
 
 The data retrieved from the APIS, are then processed, filtered and displayed on webpage. Using, Vanilla JavaScript, JQuery, CSS to display a simple webpage with buttons, fields and tables. It’s a Single Page Application, wherein, clicking on buttons data is displayed within a table. Inputs are displayed to choose particular user and particular order.
 We created a local JSON database, storing static text. All the GET Requests are performed based on the data from this JSON file. 
